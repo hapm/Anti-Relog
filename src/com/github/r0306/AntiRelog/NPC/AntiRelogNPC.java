@@ -270,10 +270,10 @@ public class AntiRelogNPC
 				{
 				
 					case LEATHER_BOOTS: defense += 0.02;
-					case CHAINMAIL_BOOTS: defense += 0.03;
-					case IRON_BOOTS: defense += 0.05;
-					case GOLD_BOOTS: defense += 0.8;
-					case DIAMOND_BOOTS: defense += 0.10;
+					case CHAINMAIL_BOOTS: defense += 0.02;
+					case IRON_BOOTS: defense += 0.02;
+					case GOLD_BOOTS: defense += 0.02;
+					case DIAMOND_BOOTS: defense += 0.02;
 				
 				}
 				
@@ -287,11 +287,11 @@ public class AntiRelogNPC
 				switch(material)
 				{
 				
-					case LEATHER_LEGGINGS: defense += 0.03;
-					case CHAINMAIL_LEGGINGS: defense += 0.04;
-					case IRON_LEGGINGS: defense += 0.07;
-					case GOLD_LEGGINGS: defense += 0.10;
-					case DIAMOND_LEGGINGS: defense += 0.13;
+					case LEATHER_LEGGINGS: defense += 0.02;
+					case CHAINMAIL_LEGGINGS: defense += 0.02;
+					case IRON_LEGGINGS: defense += 0.05;
+					case GOLD_LEGGINGS: defense += 0.03;
+					case DIAMOND_LEGGINGS: defense += 0.6;
 				
 				}
 				
@@ -305,11 +305,11 @@ public class AntiRelogNPC
 				switch(material)
 				{
 				
-					case LEATHER_CHESTPLATE: defense += 0.05;
-					case CHAINMAIL_CHESTPLATE: defense += 0.07;
-					case IRON_CHESTPLATE: defense += 0.08;
-					case GOLD_CHESTPLATE: defense += 0.12;
-					case DIAMOND_CHESTPLATE: defense += 0.15;
+					case LEATHER_CHESTPLATE: defense += 0.02;
+					case CHAINMAIL_CHESTPLATE: defense += 0.03;
+					case IRON_CHESTPLATE: defense += 0.06;
+					case GOLD_CHESTPLATE: defense += 0.04;
+					case DIAMOND_CHESTPLATE: defense += 0.08;
 				
 				}
 				
@@ -325,9 +325,9 @@ public class AntiRelogNPC
 				
 					case LEATHER_HELMET: defense += 0.02;
 					case CHAINMAIL_HELMET: defense += 0.03;
-					case IRON_HELMET: defense += 0.05;
-					case GOLD_HELMET: defense += 0.8;
-					case DIAMOND_HELMET: defense += 0.10;
+					case IRON_HELMET: defense += 0.04;
+					case GOLD_HELMET: defense += 0.5;
+					case DIAMOND_HELMET: defense += 0.7;
 				
 				}
 				
@@ -341,11 +341,11 @@ public class AntiRelogNPC
 					
 					String s = player.getInventory().getItemInHand().getType().name();
 													
-					if (s.contains("WOODEN")) damage = 1;
-					else if (s.contains("STONE")) damage = 2;
-					else if (s.contains("IRON")) damage = 3;
-					else if (s.contains("GOLD")) damage = 4.5;
-					else if (s.contains("DIAMOND")) damage = 5.5;
+					if (s.contains("WOODEN")) damage = 0.2;
+					else if (s.contains("STONE")) damage = 0.3;
+					else if (s.contains("IRON")) damage = 0.4;
+					else if (s.contains("GOLD")) damage = 0.5;
+					else if (s.contains("DIAMOND")) damage = 0.7;
 									
 					if (npc.getInventory().getItemInHand().getType().name().contains("SWORD"))
 					{
